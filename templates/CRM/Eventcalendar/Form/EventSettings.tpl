@@ -1,5 +1,5 @@
 <div class="form-item">
-	{crmScript ext=com.osseed.eventcalendar file=jscolor/jscolor.js}
+	{crmScript ext=com.blackbricksoftware.eventcalendar file=jscolor/jscolor.js}
 	<div class="crm-block crm-form-block crm-event-setting-form-block">
 		
 		<div class="crm-submit-buttons">{include file="CRM/common/formButtons.tpl" location="top"}</div>

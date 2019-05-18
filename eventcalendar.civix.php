@@ -144,7 +144,7 @@ function _eventcalendar_civix_civicrm_managed(&$entities) {
     $es = include $file;
     foreach ($es as $e) {
       if (empty($e['module'])) {
-        $e['module'] = 'com.osseed.eventcalendar';
+        $e['module'] = 'com.blackbricksoftware.eventcalendar';
       }
       $entities[] = $e;
     }

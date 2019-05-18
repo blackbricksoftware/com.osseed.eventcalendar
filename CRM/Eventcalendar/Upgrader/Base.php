@@ -39,7 +39,7 @@ class CRM_Eventcalendar_Upgrader_Base {
     if (! self::$instance) {
       // FIXME auto-generate
       self::$instance = new CRM_Eventcalendar_Upgrader(
-        'com.osseed.eventcalendar',
+        'com.blackbricksoftware.eventcalendar',
         __DIR__ .'/../../../'
       );
     }
