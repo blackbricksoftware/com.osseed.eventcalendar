@@ -13,7 +13,7 @@
 						'<span class="fc-view-event pull-right pointer hidden-print" title="View event details"><i class="fa fa-share"></i></span>'
 					);
 					element.find('.fc-multiple-add').on('click',function(){
-						document.location.href = CRM.url('civicrm/lalgbt/multipleregister', {
+						document.location.href = CRM.url('civicrm/twc/multipleregister', {
 							eventids: [event.event_id],
 							reset: 1,
 						});
