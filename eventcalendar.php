@@ -70,11 +70,11 @@ function eventcalendar_civicrm_managed(&$entities) {
 }
 
 class EventCalendarDefines {
-	public static  $fullcalendarviews = array(
+	public static  $fullcalendarviews = [
 		'month' => 'Month',
 		'basicWeek' => 'Basic Week',
 		'basicDay' => 'Basic Day',
 		'agendaWeek' => 'Agenda Week',
 		'agendaDay' => 'Agenda Day',
-	);
+  ];
 }

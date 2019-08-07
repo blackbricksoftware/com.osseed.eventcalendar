@@ -43,7 +43,7 @@ class CRM_Eventcalendar_Page_ShowEvents extends CRM_Core_Page {
 			return;
 		}
 		
-		$config = (array)CRM_Core_BAO_Setting::getItem('Eventcalendar', 'events_event_types', null, array());
+		$config = (array)CRM_Core_BAO_Setting::getItem('Eventcalendar', 'events_event_types');
 		//~ echo pre($config);
 		
 		if(isset($config['event_calendar_title']) && !empty($config['event_calendar_title'])) {

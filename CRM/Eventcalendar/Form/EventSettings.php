@@ -22,7 +22,7 @@ class CRM_Eventcalendar_Form_EventSettings extends CRM_Admin_Form {
 
 	function setDefaultValues() {
 		
-		$defaults = array_merge(parent::setDefaultValues(),(array)CRM_Core_BAO_Setting::getItem('Eventcalendar', 'events_event_types', null, array()));
+		$defaults = array_merge(parent::setDefaultValues(),(array)CRM_Core_BAO_Setting::getItem('Eventcalendar', 'events_event_types'));
 		
 		require_once 'CRM/Event/PseudoConstant.php';
 		$event_type = CRM_Event_PseudoConstant::eventType();
@@ -71,7 +71,6 @@ class CRM_Eventcalendar_Form_EventSettings extends CRM_Admin_Form {
 				
 		parent::buildQuickForm();
 		
-		$config =  CRM_Core_BAO_Setting::getItem('Eventcalendar', 'events_event_types', null, new stdClass);
 		$this->add('text', 'show_event_from_month', ts('Show Events from how many months from current month '), array('size' => 50));
 		$this->add('text', 'event_calendar_title', ts('Calendar title'), array('size' => 50));
 		$this->addElement('checkbox', 'show_end_date', ts('Show End Date'));
